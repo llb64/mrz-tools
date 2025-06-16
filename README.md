@@ -7,3 +7,4 @@ This tool allows you to edit or create and generate a Machine Readable Zone (MRZ
 **Todo:**
 
 - Add different formats
+- Add transliteration for characters
