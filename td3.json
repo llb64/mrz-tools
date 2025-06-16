@@ -1,0 +1,20 @@
+{
+  "documentCode": 2,
+  "issuingStateOrOrganization": 3,
+  "name": 39,
+  "passportNumber": 9,
+  "passportNumberCheckDigit": [0, 9],
+  "nationality": 3,
+  "dateOfBirth": 6,
+  "dateOfBirthCheckDigit": [13, 19],
+  "sex": 1,
+  "dateOfExpiry": 6,
+  "dateOfExpiryCheckDigit": [21, 27],
+  "personalNumberOrOptionalElements": 14,
+  "personalNumberOrOptionalElementsCheckDigit": [28, 42],
+  "compositeCheckDigit": [
+    [0, 10],
+    [13, 20],
+    [21, 43]
+  ]
+}

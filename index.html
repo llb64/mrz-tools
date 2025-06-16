@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MRZ Tools</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tiny-case@1.0.3/index.min.js"></script>
+    <script defer src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>MRZ Tools</h1>
+      <p>
+        This tool allows you edit or create and generate a Machine Readable Zone
+        (MRZ) for passports and other travel documents.
+      </p>
+    </header>
+
+    <hr />
+
+    <main>
+      <form id="td3-form">
+        <h2>Upper Line</h2>
+        <sl-input
+          label="Document code"
+          id="document-code"
+          value="PP"
+          maxlength="2"
+        ></sl-input>
+        <br />
+        <sl-input
+          label="Issuing State or Organization"
+          id="issuing-state-or-organization"
+          value="UTO"
+          maxlength="3"
+        ></sl-input>
+        <br />
+        <sl-input
+          label="Given names"
+          id="given-names"
+          value="ANNA MARIA"
+          maxlength="39"
+        ></sl-input>
+        <br />
+        <sl-input
+          label="Surname"
+          id="surname"
+          value="ERIKSSON"
+          maxlength="39"
+        ></sl-input>
+        <h2>Lower Line</h2>
+        <br />
+        <sl-input
+          label="Passport number"
+          id="passport-number"
+          value="L898902C3"
+          maxlength="9"
+        ></sl-input>
+        <br />
+        <sl-input
+          label="Nationality"
+          id="nationality"
+          value="UTO"
+          maxlength="3"
+        ></sl-input>
+        <br />
+        <sl-input
+          label="Date of birth"
+          type="date"
+          id="date-of-birth"
+          value="1974-08-12"
+        ></sl-input>
+        <br />
+        <sl-select label="Sex" id="sex" value="F">
+          <sl-option value="F">Female</sl-option>
+          <sl-option value="M">Male</sl-option>
+          <sl-option value="">Unspecified</sl-option>
+        </sl-select>
+        <br />
+        <sl-input
+          label="Date of expiry"
+          type="date"
+          id="date-of-expiry"
+          value="2012-04-15"
+        ></sl-input>
+        <br />
+        <sl-input
+          label="Personal number or other optional data elements"
+          id="personal-number-or-optional-elements"
+          value="ZE184226B"
+          maxlength="14"
+        ></sl-input>
+        <br />
+        <sl-button variant="primary" type="submit">Generate MRZ</sl-button>
+      </form>
+      <br />
+      <label for="output">Output MRZ</label>
+      <textarea type="text" id="output" readonly rows="2" cols="44"></textarea>
+    </main>
+    <hr />
+    <footer>Made by <a href="https://github.com/llb64">llb64</a></footer>
+  </body>
+</html>

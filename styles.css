@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+}
+
+#output {
+  resize: none;
+  font-family: monospace;
+  line-height: 2.1rem;
+  letter-spacing: 0.3px;
+}
+
+footer {
+  text-align: center;
+}
